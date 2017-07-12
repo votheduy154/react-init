@@ -99,31 +99,7 @@
     ]
   },
   "eslintConfig": {
-    "extends": [
-      "google",
-      "plugin:import/errors",
-      "plugin:import/warnings"
-    ],
-    "plugins": [
-      "import",
-      "react"
-    ],
-    "rules": {
-      "max-len": ["error", 150],
-      "indent": ["error", 2],
-      "react/jsx-uses-react": "error",
-      "react/jsx-uses-vars": "error",
-      "semi": ["error", "never"],
-      "react/no-unknown-property": [2, {"ignore": ["class", "for"]}]
-    },
-    "parserOptions": {
-      "sourceType": "module",
-      "ecmaVersion": 6,
-      "ecmaFeatures": {
-        "arrowFunctions": true,
-        "modules": true,
-        "jsx": true
-      }
-    }
+    "extends": ["react-app", "plugin:jsx-a11y/recommended"],
+    "plugins": ["jsx-a11y"]
   }
 }
