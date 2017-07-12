@@ -1,13 +1,13 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 // import {bindActionCreators} from 'redux'
-import HomePage from './HomePage'
+import DashBoard from './Dashboard'
 
-class HomePageContainer extends Component {
+class DashBoardContainer extends Component {
 
   render() {
     return (
-      <HomePage/>
+      <DashBoard />
     )
   }
 
@@ -27,4 +27,4 @@ const mapStateToProps = (rootState) => {
 const mapDispatchToProps = () => {
   return {}
 }
-export default connect(mapStateToProps, mapDispatchToProps)(HomePageContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(DashBoardContainer)

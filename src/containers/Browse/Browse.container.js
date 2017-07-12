@@ -1,13 +1,12 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 // import {bindActionCreators} from 'redux'
-import HomePage from './HomePage'
+import Browse from './Browse'
 
-class HomePageContainer extends Component {
-
+class BrowseContainer extends Component {
   render() {
     return (
-      <HomePage/>
+      <Browse/>
     )
   }
 
@@ -27,4 +26,4 @@ const mapStateToProps = (rootState) => {
 const mapDispatchToProps = () => {
   return {}
 }
-export default connect(mapStateToProps, mapDispatchToProps)(HomePageContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(BrowseContainer)

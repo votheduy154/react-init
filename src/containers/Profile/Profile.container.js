@@ -1,13 +1,13 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 // import {bindActionCreators} from 'redux'
-import HomePage from './HomePage'
+import Profile from './Profile'
 
-class HomePageContainer extends Component {
+class ProfileContainer extends Component {
 
   render() {
     return (
-      <HomePage/>
+      <Profile/>
     )
   }
 
@@ -27,4 +27,4 @@ const mapStateToProps = (rootState) => {
 const mapDispatchToProps = () => {
   return {}
 }
-export default connect(mapStateToProps, mapDispatchToProps)(HomePageContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(ProfileContainer)

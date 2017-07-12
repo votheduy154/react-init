@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Provider} from 'react-redux'
-import {Router, browserHistory} from 'react-router'
+import {Router, browserHistory, Route, RouterContext, withRouter} from 'react-router'
 import {syncHistoryWithStore} from 'react-router-redux'
 import registerServiceWorker from './registerServiceWorker'
 import configureStore from './configs/store.config'
 
 // page container
-import {Root, HomePage} from './containers'
+import {Root, HomePage, Browse, DashBoard, Profile} from './containers'
 
 // config store
 const store = configureStore()
@@ -19,6 +19,9 @@ const AppRouter = () => {
     <Router history={history}>
       <Router path="/" component={Root}></Router>
       <Router path="/Home" component={HomePage}></Router>
+      <Router path="/Browse" component={Browse}></Router>
+      <Router path="/Dashboard" component={DashBoard}></Router>
+      <Router path="/Profile" component={Profile}></Router>
     </Router>
   )
 }

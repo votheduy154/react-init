@@ -5,7 +5,7 @@ import * as initAction from '../../redux/init/init.action'
 
 class Root extends Component {
   render() {
-    console.log(this.props)
+    // console.log(this.props)
     return (
       <div style={{color: 'red', textAlign: 'center', fontSize: 20}}>
         <p>Loading ....</p>
