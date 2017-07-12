@@ -7,17 +7,18 @@ class Root extends Component {
     render() {
         console.log(this.props)
         return (
-            <div style={{color:'red', textAlign:'center', fontSize: 20}}>
+            <div style={{color: 'red', textAlign: 'center', fontSize: 20}}>
                 <p>Loading ....</p>
             </div>
         )
     }
-    componentDidMount(){
+
+    componentDidMount() {
         this.props.InitAction.initAction()
-        setTimeout(()=>{
+        setTimeout(() => {
             this.props.router.replace({
                 pathname: '/Home',
-                state: { fromDashboard: true }
+                state: {fromDashboard: true}
             })
         }, 1000)
     }
@@ -25,7 +26,7 @@ class Root extends Component {
 
 const mapStateToProps = (rootState) => {
     return {
-        payload: rootState
+        payload: rootState,
     }
 }
 const mapDispatchToProps = (dispatch) => {
