@@ -1,3 +1,3 @@
 export default {
- logoApp: require('./logo.svg')
+  logoApp: require('./logo.svg')
 }
