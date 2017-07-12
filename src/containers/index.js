@@ -3,5 +3,5 @@ import HomePage from './homePage/HomePage.container'
 
 export {
   Root,
-  HomePage
+  HomePage,
 }
