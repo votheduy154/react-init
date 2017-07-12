@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { Router, Route, browserHistory, IndexRoute } from 'react-router'
-import { syncHistoryWithStore } from 'react-router-redux'
-import registerServiceWorker from './registerServiceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import {Provider} from 'react-redux'
+import {Router, browserHistory} from 'react-router'
+import {syncHistoryWithStore} from 'react-router-redux'
+import registerServiceWorker from './registerServiceWorker'
 import configureStore from './configs/store.config'
 
 // page container
-import { Root, HomePage } from './containers';
+import {Root, HomePage} from './containers'
 
 // config store
 const store = configureStore()
@@ -23,5 +23,5 @@ const AppRouter = () => {
   )
 }
 
-ReactDOM.render(<Provider store={store}><AppRouter /></Provider>, document.getElementById('root'));
-registerServiceWorker();
+ReactDOM.render(<Provider store={store}><AppRouter /></Provider>, document.getElementById('root'))
+registerServiceWorker()
