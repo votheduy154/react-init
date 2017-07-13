@@ -5,8 +5,8 @@ import * as Icon from 'react-icons/lib/fa/';
 class Footer extends Component {
   render() {
     return (
-      <footer class="page-footer">
-        <ul class="list-social">
+      <footer className="page-footer">
+        <ul className="list-social">
           <li>
             <a href=""><Icon.FaFacebook size={17} color="#fff"/></a>
           </li>
@@ -20,7 +20,7 @@ class Footer extends Component {
             <a href=""><Icon.FaGooglePlus size={17} color="#fff"/></a>
           </li>
         </ul>
-        <ul class="menu-footer">
+        <ul className="menu-footer">
           <li>
             <a href="">About us</a>
           </li>

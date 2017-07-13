@@ -7,7 +7,7 @@ class Root extends Component {
   render() {
     // console.log(this.props)
     return (
-      <div style={{color: 'red', textAlign: 'center', fontSize: 20}}>
+      <div style={{textAlign: 'center', fontSize: 20}}>
         <p>Loading ....</p>
       </div>
     )

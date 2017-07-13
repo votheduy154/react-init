@@ -12,13 +12,5 @@ export default function configureStore(initialState) {
       window.devToolsExtension ? window.devToolsExtension() : f => f
     )
   )
-// NOTE: https://github.com/reactjs/react-redux/releases/tag/v2.0.0
-// NOTE: This doesn't seem to work yet !
-//   if (module.hot) {
-//     (module.hot: any).accept('../reducers', () => {
-//       const nextRootReducer = require('../reducers/index');
-//       store.replaceReducer(nextRootReducer);
-//     });
-//   }
   return store
 }

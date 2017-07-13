@@ -1,28 +1,12 @@
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  padding: 20px;
-  color: white;
-}
-#body {
-  text-align: center;
-  p{
-    font-size: 20px;
+.dashboard-page{
+  .dashboard-row {
+    margin-bottom: 0px;
   }
-}
-.App-intro {
-  font-size: large;
-}
-
-.sidebar-column{
-  background-color: #26A69A;
-  height: 100vh;
-}
-.dashboard-content {
-  border-left: 1px solid #ccc;
-
+  .sidebar-column{
+    background-color: #26A69A;
+    height: 100vh;
+  }
+  .dashboard-content {
+    border-left: 1px solid #ccc;
+  }
 }
